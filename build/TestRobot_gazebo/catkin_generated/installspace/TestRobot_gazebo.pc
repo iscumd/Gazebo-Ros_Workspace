@@ -1,0 +1,8 @@
+prefix=/home/keniso/Gazebo-Ros_Workspace/install
+
+Name: TestRobot_gazebo
+Description: Description of TestRobot_gazebo
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/keniso/Gazebo-Ros_Workspace/install/lib 
+Requires: 

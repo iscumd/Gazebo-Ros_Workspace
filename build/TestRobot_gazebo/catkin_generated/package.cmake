@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "TestRobot_gazebo")
+set(TestRobot_gazebo_MAINTAINER "keniso <keniso@todo.todo>")
+set(TestRobot_gazebo_DEPRECATED "")
+set(TestRobot_gazebo_VERSION "0.0.0")
+set(TestRobot_gazebo_BUILD_DEPENDS )
+set(TestRobot_gazebo_RUN_DEPENDS )
+set(TestRobot_gazebo_BUILDTOOL_DEPENDS "catkin")
