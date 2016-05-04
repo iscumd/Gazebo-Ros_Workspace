@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/keniso/Gazebo-Ros_Workspace/devel/setup.sh

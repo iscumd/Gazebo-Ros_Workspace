@@ -1,0 +1,53 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/keniso/Gazebo-Ros_Workspace/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1753136737/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1753136737.dir/build.make CMakeFiles/cmTryCompileExec1753136737.dir/build
+make[1]: Entering directory `/home/keniso/Gazebo-Ros_Workspace/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/keniso/Gazebo-Ros_Workspace/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1753136737.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1753136737.dir/CheckSymbolExists.c.o   -c /home/keniso/Gazebo-Ros_Workspace/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec1753136737
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1753136737.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec1753136737.dir/CheckSymbolExists.c.o  -o cmTryCompileExec1753136737 -rdynamic 
+CMakeFiles/cmTryCompileExec1753136737.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec1753136737] Error 1
+make[1]: Leaving directory `/home/keniso/Gazebo-Ros_Workspace/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec1753136737/fast] Error 2
+
+File /home/keniso/Gazebo-Ros_Workspace/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/keniso/Gazebo-Ros_Workspace/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1175739523/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1175739523.dir/build.make CMakeFiles/cmTryCompileExec1175739523.dir/build
+make[1]: Entering directory `/home/keniso/Gazebo-Ros_Workspace/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/keniso/Gazebo-Ros_Workspace/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1175739523.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec1175739523.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1175739523
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1175739523.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec1175739523.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1175739523 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec1175739523] Error 1
+make[1]: Leaving directory `/home/keniso/Gazebo-Ros_Workspace/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec1175739523/fast] Error 2
+
+
