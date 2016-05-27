@@ -7,6 +7,9 @@
 # new environment variables
 
 # modified environment variables
-export LD_LIBRARY_PATH="/home/keniso/Gazebo-Ros_Workspace/devel/lib/x86_64-linux-gnu:/opt/ros/indigo/lib/x86_64-linux-gnu:/home/keniso/Gazebo-Ros_Workspace/devel/lib:/opt/ros/indigo/lib:/usr/local/lib:/opt/ros/indigo/lib/python2.7/dist-packages:/opt/ros/indigo/lib/python2.7/dist-packages"
-export PKG_CONFIG_PATH="/home/keniso/Gazebo-Ros_Workspace/devel/lib/x86_64-linux-gnu/pkgconfig:/opt/ros/indigo/lib/x86_64-linux-gnu/pkgconfig:/home/keniso/Gazebo-Ros_Workspace/devel/lib/pkgconfig:/opt/ros/indigo/lib/pkgconfig"
+export CMAKE_PREFIX_PATH="/home/keniso/Gazebo-Ros_Workspace/devel:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/home/keniso/Gazebo-Ros_Workspace/devel/lib:/opt/ros/indigo/lib:/usr/local/lib:/opt/ros/indigo/lib/python2.7/dist-packages"
+export PKG_CONFIG_PATH="/home/keniso/Gazebo-Ros_Workspace/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD="/home/keniso/Gazebo-Ros_Workspace/build"
+export ROSLISP_PACKAGE_DIRECTORIES="/home/keniso/Gazebo-Ros_Workspace/devel/share/common-lisp"
+export ROS_PACKAGE_PATH="/home/keniso/Gazebo-Ros_Workspace/src:$ROS_PACKAGE_PATH"

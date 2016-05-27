@@ -118,6 +118,11 @@ IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   INCLUDE("/home/keniso/Gazebo-Ros_Workspace/build/gtest/cmake_install.cmake")
   INCLUDE("/home/keniso/Gazebo-Ros_Workspace/build/TestRobot_gazebo/cmake_install.cmake")
+  INCLUDE("/home/keniso/Gazebo-Ros_Workspace/build/baxter_common/baxter_common/cmake_install.cmake")
+  INCLUDE("/home/keniso/Gazebo-Ros_Workspace/build/baxter_common/baxter_description/cmake_install.cmake")
+  INCLUDE("/home/keniso/Gazebo-Ros_Workspace/build/baxter_common/rethink_ee_description/cmake_install.cmake")
+  INCLUDE("/home/keniso/Gazebo-Ros_Workspace/build/baxter_common/baxter_maintenance_msgs/cmake_install.cmake")
+  INCLUDE("/home/keniso/Gazebo-Ros_Workspace/build/baxter_common/baxter_core_msgs/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
 

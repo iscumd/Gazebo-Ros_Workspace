@@ -1,0 +1,8 @@
+prefix=/home/keniso/Gazebo-Ros_Workspace/install
+
+Name: baxter_description
+Description: Description of baxter_description
+Version: 1.2.0
+Cflags: 
+Libs: -L/home/keniso/Gazebo-Ros_Workspace/install/lib 
+Requires: 

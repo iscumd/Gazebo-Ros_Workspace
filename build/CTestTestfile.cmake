@@ -6,3 +6,8 @@
 # testing this directory and lists subdirectories to be tested as well.
 SUBDIRS(gtest)
 SUBDIRS(TestRobot_gazebo)
+SUBDIRS(baxter_common/baxter_common)
+SUBDIRS(baxter_common/baxter_description)
+SUBDIRS(baxter_common/rethink_ee_description)
+SUBDIRS(baxter_common/baxter_maintenance_msgs)
+SUBDIRS(baxter_common/baxter_core_msgs)

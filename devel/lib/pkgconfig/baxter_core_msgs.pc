@@ -1,0 +1,8 @@
+prefix=/home/keniso/Gazebo-Ros_Workspace/devel
+
+Name: baxter_core_msgs
+Description: Description of baxter_core_msgs
+Version: 1.2.0
+Cflags: -I/home/keniso/Gazebo-Ros_Workspace/devel/include
+Libs: -L/home/keniso/Gazebo-Ros_Workspace/devel/lib 
+Requires: message_runtime geometry_msgs sensor_msgs std_msgs

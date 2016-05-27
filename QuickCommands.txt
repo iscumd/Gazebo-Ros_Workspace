@@ -1,0 +1,12 @@
+#Start Roscore
+roscore
+
+#Source the workspace
+source devel/setup.bash 
+
+#Command For Launching World
+roslaunch TestRobot_gazebo TestRobot.launch
+
+#Command For Lauching baxter urdf (must be run with an open instance of gazebo)
+rosrun gazebo_ros spawn_model -file `rospack find baxter_description`/urdf/baxter.urdf -urdf -z 1 -model baxter
+
